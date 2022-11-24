@@ -1,0 +1,1 @@
+App en React Native (solo iOS)
