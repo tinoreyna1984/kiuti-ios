@@ -18,9 +18,10 @@ export const styles = StyleSheet.create({
     width: "100%",
     justifyContent: "space-evenly",
     alignContent: "center",
-    paddingTop: 20,
-    paddingBottom: 40,
+    paddingTop: 10,
+    paddingBottom: 10,
     paddingHorizontal: 20,
+    borderWidth: 1,
     borderColor: "grey",
     borderStyle: "solid",
     borderBottomStartRadius: "20%",
@@ -39,19 +40,19 @@ export const styles = StyleSheet.create({
   },
   // footer
   footer: {
-    backgroundColor: "#adb5bd",
+    backgroundColor: "#b3b2af",
     width: "100%",
     height: "28%",
     justifyContent: "center",
     alignContent: "center",
+    borderWidth: 1,
     borderTopStartRadius: "20%",
     borderTopEndRadius: "20%",
     borderColor: "grey",
     borderStyle: "solid",
-    paddingTop: 20,
     paddingBottom: 150,
     paddingHorizontal: 20,
-    marginTop: 10,
+    //marginTop: 10,
     shadowRadius: 25,
     shadowOffset: {width: 5, height: 5},
     shadowOpacity: 10
@@ -66,10 +67,25 @@ export const styles = StyleSheet.create({
   list: {
     width: "100%",
   },
+  escogeModelo: {
+    width: "100%",
+    marginTop: 5,
+    paddingVertical: 10,
+    alignItems: "center",
+  },
+  selector: {
+    backgroundColor: "#b3b2af",
+    borderRadius: "15%",
+    width: "60%",
+    padding: 10,
+    shadowRadius: 3,
+    shadowOffset: {width: 5, height: 5},
+    shadowOpacity: 10
+  },
   // estuche
   estuche: {
-    flexDirection: "row",
-    justifyContent: "space-evenly",
+    flexDirection: "column",
+    justifyContent: "center",
     alignItems: "center",
     marginTop: 10,
     borderColor: "#808080",
@@ -78,14 +94,16 @@ export const styles = StyleSheet.create({
     paddingVertical: 5,
   },
   estucheImg: {
-    width: 120,
-    height: 120,
+    width: 180,
+    height: 180,
   },
   estucheTitle: {
-    fontSize: 20,
+    textAlign: "center",
+    fontSize: 25,
   },
   estuchePrice: {
-    fontSize: 16,
+    textAlign: "center",
+    fontSize: 20,
   },
 });
 

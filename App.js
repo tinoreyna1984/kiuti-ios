@@ -1,4 +1,6 @@
 import Main from './Main';
+import { Provider } from "react-redux";
+import { store } from './redux/store';
 
 /**
  * Ya que no hay un index.js, esta es una buena práctica.
@@ -7,7 +9,10 @@ import Main from './Main';
 
 export default function App() {
   return (
-    <Main />
+    <Provider store={store}>
+      <Main />
+    </Provider>
+    
   );
 }
 

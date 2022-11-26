@@ -8,11 +8,11 @@ export default function Estuche({ estuche }) {
     <View style={styles.estuche}>
       <Image
         style={styles.estucheImg}
-        source={require("../assets/kiuti-logo.jpg")}
+        source={{uri: estuche.metadata.image.url}}
       />
       <View>
         <Text style={styles.estucheTitle}>{estuche.title}</Text>
-        <Text style={styles.estuchePrice}>{estuche.price}</Text>
+        <Text style={styles.estuchePrice}>{estuche.metadata.precio}</Text>
       </View>
     </View>
   );
