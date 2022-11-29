@@ -18,7 +18,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tinoreyna1984.kiuticases"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,6 +29,11 @@
     },
     "web": {
       "favicon": "./assets/kiuti-logo.jpg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3997a2a9-1aa6-49eb-90cd-83efd0d35fb4"
+      }
     }
   }
 }
