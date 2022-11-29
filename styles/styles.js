@@ -1,9 +1,9 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   // statusBar
   statusBar: {
-    backgroundColor: '#f16c94',
+    backgroundColor: "#f16c94",
   },
   // container
   container: {
@@ -27,12 +27,12 @@ export const styles = StyleSheet.create({
     borderBottomStartRadius: "20%",
     borderBottomEndRadius: "20%",
     shadowRadius: 25,
-    shadowOffset: {width: 5, height: 5},
-    shadowOpacity: 10
+    shadowOffset: { width: 5, height: 5 },
+    shadowOpacity: 10,
   },
-  logo : {
+  logo: {
     width: 98,
-    height: 98
+    height: 98,
   },
   title: {
     color: "#000",
@@ -42,7 +42,7 @@ export const styles = StyleSheet.create({
   footer: {
     backgroundColor: "#b3b2af",
     width: "100%",
-    height: "28%",
+    height: "35%",
     justifyContent: "center",
     alignContent: "center",
     borderWidth: 1,
@@ -50,12 +50,12 @@ export const styles = StyleSheet.create({
     borderTopEndRadius: "20%",
     borderColor: "grey",
     borderStyle: "solid",
-    paddingBottom: 150,
+    paddingBottom: 250,
     paddingHorizontal: 20,
     //marginTop: 10,
     shadowRadius: 25,
-    shadowOffset: {width: 5, height: 5},
-    shadowOpacity: 10
+    shadowOffset: { width: 5, height: 5 },
+    shadowOpacity: 10,
   },
   // body
   body: {
@@ -64,8 +64,15 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: 50,
   },
+  bodyHeader: {
+    textAlign: "center",
+    marginTop: 20,
+    paddingHorizontal: 5,
+    paddingVertical: 5,
+  },
   list: {
     width: "100%",
+    paddingHorizontal: 10,
   },
   escogeModelo: {
     width: "100%",
@@ -79,8 +86,8 @@ export const styles = StyleSheet.create({
     width: "60%",
     padding: 10,
     shadowRadius: 3,
-    shadowOffset: {width: 5, height: 5},
-    shadowOpacity: 10
+    shadowOffset: { width: 5, height: 5 },
+    shadowOpacity: 10,
   },
   // estuche
   estuche: {
@@ -91,7 +98,7 @@ export const styles = StyleSheet.create({
     borderColor: "#808080",
     borderWidth: 1,
     borderRadius: "20%",
-    paddingVertical: 5,
+    paddingVertical: 10,
   },
   estucheImg: {
     width: 180,
@@ -99,11 +106,43 @@ export const styles = StyleSheet.create({
   },
   estucheTitle: {
     textAlign: "center",
-    fontSize: 25,
+    fontSize: 18,
   },
   estuchePrice: {
     textAlign: "center",
-    fontSize: 20,
+    fontSize: 15,
+  },
+  estucheNotFound : {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100%",
+    paddingTop: 20,
+    paddingBottom: 300,
+  },
+  // modal
+  modalView: {
+    marginTop: 150,
+    marginStart: 50,
+    backgroundColor: "white",
+    borderRadius: 20,
+    paddingVertical: 10,
+    width: "75%",
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  modalContent: {
+  },
+  // loading
+  loading : {
+    margin: "10%",
+    //height: "100%",
   },
 });
-

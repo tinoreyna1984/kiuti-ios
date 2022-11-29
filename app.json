@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "kiuti-ios",
-    "slug": "kiuti-ios",
+    "name": "Kiuti Cases",
+    "slug": "kiuti-cases",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/kiuti-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -27,7 +27,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/kiuti-logo.jpg"
     }
   }
 }
