@@ -15,11 +15,11 @@ export default function Estuche({ estuche }) {
     <View style={styles.estuche}>
       <Image
         style={styles.estucheImg}
-        source={{ uri: estuche.metadata.image.url }}
+        source={estuche.url}
       />
       <View style={{ paddingVertical: 5, paddingHorizontal: 20 }}>
         <Text style={styles.estucheTitle}>{estuche.title}</Text>
-        <Text style={styles.estuchePrice}>{estuche.metadata.precio}</Text>
+        <Text style={styles.estuchePrice}>{estuche.precio}</Text>
       </View>
       <WhatsAppButton url={url} />
     </View>

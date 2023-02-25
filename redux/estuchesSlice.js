@@ -1,24 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { bucket } from "../api/cosmic-api";
+import { estuchesList } from "../helpers/estuches";
 
 export const estuchesSlice = createSlice({
   name: "estuches",
   initialState: {
-    slug: "iphone-13-pro-max",
-    title: "iPhone 13 Pro Max",
+    slug: "iphone-14-pro-max",
+    title: "iPhone 14 Pro Max",
     listaEstuches: [],
     loading: false,
   },
   reducers: {
     getEstuches: (state, action) => {
       const { slug, title, estuches } = action.payload;
-      const {
-        metadata: { estuche },
-      } = estuches[0];
       state.slug = slug;
       state.title = title;
-      state.listaEstuches = estuche;
-      //console.log(state)
+      state.listaEstuches = estuches.filter(estuche => estuche.tags.includes(title));
     },
     setLoadingState: (state, action) => {
       state.loading = action.payload;
@@ -29,14 +25,7 @@ export const estuchesSlice = createSlice({
 export const startFilterEstuches = ({ slug, title }) => {
   return async (dispatch) => {
     dispatch(setLoadingState(true));
-    const data = await bucket.objects
-      .find({
-        type: "modelos",
-        slug: slug,
-      })
-      .props("metadata");
-    const estuches = await data.objects;
-
+    const estuches =  estuchesList;
     dispatch(getEstuches({ slug, title, estuches }));
     dispatch(setLoadingState(false));
   };
